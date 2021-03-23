@@ -13,7 +13,7 @@ int main()
 
   for(int i; i<N; i++)
 	{
-		rdnum = random() % 99;
+		rdnum = random() % 100;
 		cout << rdnum << endl;
 	}
 
