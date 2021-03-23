@@ -15,7 +15,17 @@ int main()
 
     for(num = 1; num <= range2; num++)
     {
-      
+      flag = 1;
+
+      for(i = 2; i < num; i++)
+      {
+        if((num %i) == 0) break;
+      }
+
+      if(i == num)
+        cout << num << " is a PRIME Number\n";
+
+    }
 
   }
   
