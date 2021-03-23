@@ -10,3 +10,13 @@ int main()
   cout << "Enter your range: ";
   cin >> range1 >> range2;
   
+  for(num = range1; num <= range2; i++)
+  {
+
+    for(num = 1; num <= range2; num++)
+    {
+      
+
+  }
+  
+}
