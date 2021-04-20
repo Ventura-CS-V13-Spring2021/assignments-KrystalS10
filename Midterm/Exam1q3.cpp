@@ -16,5 +16,13 @@ int main(){
   cout<<"Num2 is: " << num2<<endl;
   int num3 = getRdnum();
   cout << "Num3 is: " << num3<<endl;
+
   
+}
+
+int getRdnum(){
+  int rdnum;
+  rdnum = rand()% 9 + 1;
+  return rdnum; 
+
 }
