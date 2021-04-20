@@ -41,5 +41,9 @@ int getRdnum(){
 
 int isGreater(int n){
   static int precedingnum = 0;
+  if (precedingnum == 0){
+    precedingnum = n;
+    return 0;
+  }
 // You need to use Repl.it 
 // and commit it often.
