@@ -3,7 +3,7 @@
 using namespace std;
 
 int getRdnum();
-int isGreater();
+int isGreater(int);
 
 const int N = 10;
 
