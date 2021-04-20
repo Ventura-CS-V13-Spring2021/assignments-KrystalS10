@@ -23,8 +23,15 @@ int main()
   for ( int i = 0; i < N; i++){
     randNum = getRdnum();
     cout<< randNum << "\t";
+    if (isGreater(randNum)){
+      ofs << randNum << endl;
+    }
   }
+    cout<<endl;
+    ofs.close();
 }
+
+
 
 
 int getRdnum(){
