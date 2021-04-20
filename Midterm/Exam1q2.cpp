@@ -2,8 +2,8 @@
 #include <fstream>
 using namespace std;
 
-int getrandNum();
-int greaterCheck();
+int getRdnum();
+int isGreater();
 
 const int N = 10;
 
@@ -23,6 +23,12 @@ int main()
   for ( i = 0; i < N; i++){
     
   }
+}
+
+
+int getRdnum(){
+  return rand() % 50 + 1;
+
 }
 // You need to use Repl.it 
 // and commit it often.
