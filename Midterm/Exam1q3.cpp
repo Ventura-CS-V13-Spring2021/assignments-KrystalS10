@@ -7,11 +7,14 @@ int getRdnum(void);
 
 
 int main(){
-  int randnum;
+  //int randnum;
   srand(time(0));
-  
+
+  int num1 = getRdnum();
   cout<<"Num1 is: " << num1<< endl;
+  int num2 = getRdnum();
   cout<<"Num2 is: " << num2<<endl;
-  cout<<"Num3 is: " << num3<<endl;
+  int num3 = getRdnum();
+  cout << "Num3 is: " << num3<<endl;
   
 }
