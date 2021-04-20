@@ -38,5 +38,8 @@ int getRdnum(){
   return rand() % 50 + 1;
 
 }
+
+int isGreater(int n){
+  static int precedingnum = 0;
 // You need to use Repl.it 
 // and commit it often.
