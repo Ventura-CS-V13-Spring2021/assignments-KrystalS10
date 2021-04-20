@@ -15,9 +15,14 @@ int main()
 
   srand(time(0));
 
-  ofs.open("numbers.txt");
+  if(!ofs){
+    cerr << "File Open Error\n";
+    exit(0);
+  }
 
-  for ( i = 0; i < N; i++)
+  for ( i = 0; i < N; i++){
+    
+  }
 }
 // You need to use Repl.it 
 // and commit it often.
