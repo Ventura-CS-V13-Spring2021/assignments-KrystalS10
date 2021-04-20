@@ -48,6 +48,10 @@ int isGreater(int n){
   if (precedingnum < n){
     precedingnum = n;
     return 1;
+  } else {
+    precedingnum = n;
+    return 0;
   }
+}
 // You need to use Repl.it 
 // and commit it often.
