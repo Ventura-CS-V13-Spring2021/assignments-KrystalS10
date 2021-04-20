@@ -20,8 +20,9 @@ int main()
     exit(0);
   }
 
-  for ( i = 0; i < N; i++){
-    
+  for ( int i = 0; i < N; i++){
+    randNum = getRdnum();
+    cout<< randNum << "\t";
   }
 }
 
