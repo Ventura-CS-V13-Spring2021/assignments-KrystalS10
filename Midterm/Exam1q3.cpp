@@ -16,10 +16,11 @@ int main(){
   int num2 = getRdnum();
   int num3 = getRdnum();
 
-  cout<<"Num1 is: " << num1<< endl;
-  cout<<"Num2 is: " << num2<<endl;
-  cout << "Num3 is: " << num3<<endl;
-  cout << maxnum << endl;
+  cout<<"Random number 1 is: " << num1 << endl;
+  cout<<"Random number 2 is: " << num2 << endl;
+  cout<<"Random number 3 is: " << num3 << endl;
+
+  int minNum = findMin(num1, num2, num3);
 }
 
 int getRdnum(){
@@ -27,6 +28,15 @@ int getRdnum(){
   rdnum = rand()% 9 + 1;
   return rdnum; 
 
+}
+
+int findMin{
+  int minNum = 0;
+  if (n1 < n2 && n1 < n3){
+    minNum = n1;
+  }
+  else if ( n1 == n2 && n1 < 3){
+    minNum = n1;
 }
 
 int findMax(){  
