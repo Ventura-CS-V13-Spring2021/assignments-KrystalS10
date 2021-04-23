@@ -30,6 +30,13 @@ int main()
   cout << "The maximum number of the three is: " << maxNum << endl;
 
   int difference = getDifference(minNum,maxNum);
+  cout << "The difference between the Max and Min number is: " << difference << endl;
+
+  ifstream ifs;
+  ifs.open("question3.txt");
+
+  fileWrite(difference);
+
 
 
 
