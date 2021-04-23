@@ -10,6 +10,8 @@ int main()
   string name;
   int score_1, score_2;
   int sum;
+  int average;
+  int total_num = 0;
   
   ffs.open("students.txt");
 
@@ -27,7 +29,14 @@ int main()
     cout << "Sum: " << sum << "\t";
     
     average = sum / 2.0;
-    cout << "Avg: " << average << "\t"; 
+    cout << "Avg: " << average << "\t";
+
+    if (average > 80)
+      total_num = total_num + 1;
+
 
   }
+
+  cout << "The total number of students with an average higher than 80 is: " << total_num << endl;
+  ffs.close();
 }
