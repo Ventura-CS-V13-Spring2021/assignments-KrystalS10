@@ -5,9 +5,8 @@
 using namespace std;
 
 int getRdnum(void);
-int findMin (int n1, int n2, int n3);
-int findMax(void);
-int maxnum = findMax();
+int findMin(int n1, int n2, int n3);
+int findMax(int n1, int n2, int n3);
 
 int main(){
   int rdnum;
@@ -24,7 +23,7 @@ int main(){
   int minNum = findMin(num1, num2, num3);
   cout << "The minimum number of the three is: " << minNum << endl;
 
-  int maxNum = findMax();
+  int maxNum = findMax(num1, num2, num3);
 }
 
 int getRdnum(){
@@ -53,24 +52,20 @@ int findMin(int n1, int n2, int n3){
   return minNum;
 }
 
-int findMax(){  
-  if(num1 > num2 && num1 > num3)
-  {
-    int maxnum;
-    cout << num1 << " is the max amoung the three integers" ;
-    maxnum = num1;
+int findMax(int n1, int n2, int n3)
+{ 
+  int maxNum;
+  if ( n3 > n2 && n3 > n1){
+    maxNum = n3;
   }
-  else if (num2 > num1 && num2 > num3){
-     int maxnum;
-    cout << num2 << " is the max amoung the three integers" ;
-    maxnum = num2;
+  else if ( n3 == n2 & n3 > n1){
+    maxNum = n3;
   }
-  
-  else if(num3 > num1 && num3 > num2){
-     int maxnum;
-    cout << num3 << " is the max amoung the three integers" ;
-    maxnum = num3;
+  else if(n2 > n3 && n2 > n1){
+    maxNum = n2;
+  } 
+  else{
+    maxNum = n1;
   }
-    return maxnum;
-  
+  return maxNum;
 }
