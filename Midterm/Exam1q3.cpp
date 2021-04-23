@@ -1,20 +1,20 @@
 #include <cstdlib>
 #include <ctime>
 #include <iostream>
+#include <fstream>
 using namespace std;
 
 int getRdnum(void);
-
-int num1 = getRdnum();
-int num2 = getRdnum();
-int num3 = getRdnum();
-
 int findMax(void);
 int maxnum = findMax();
 
 int main(){
-  
+  int rdnum;
   srand(time(0));
+
+  int num1 = getRdnum();
+  int num2 = getRdnum();
+  int num3 = getRdnum();
 
   cout<<"Num1 is: " << num1<< endl;
   cout<<"Num2 is: " << num2<<endl;
