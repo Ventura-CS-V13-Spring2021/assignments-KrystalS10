@@ -20,7 +20,7 @@ int main()
   int num1 = getRdnum();
   int num2 = getRdnum();
   int num3 = getRdnum();
-  
+
   cout<<"Random number 1 is: " << num1 << endl;
   cout<<"Random number 2 is: " << num2 << endl;
   cout<<"Random number 3 is: " << num3 << endl;
@@ -113,7 +113,11 @@ int getDifference(int m1, int m2){
 
 void fileWrite (int d){
   ofstream ofs;
-  ofs.open("question.txt");
+  ofs.open("question3.txt");
+  if(!ofs){
+    cerr << "File Open Error\n";
+    exit(0);
+  }
   if (ofs.is_open()){
     ofs << d << "\t";
   }
