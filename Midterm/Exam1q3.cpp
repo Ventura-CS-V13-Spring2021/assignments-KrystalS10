@@ -29,6 +29,10 @@ int main()
   int maxNum = findMax(num1, num2, num3);
   cout << "The maximum number of the three is: " << maxNum << endl;
 
+  int difference = getDifference(minNum,maxNum);
+
+
+
 
 }
 
@@ -74,4 +78,9 @@ int findMax(int n1, int n2, int n3)
     maxNum = n1;
   }
   return maxNum;
+}
+
+int getDifference(int m1, int m2){
+  int difference = m2 - m1;
+  return difference; 
 }
