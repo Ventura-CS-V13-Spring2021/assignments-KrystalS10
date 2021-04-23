@@ -10,7 +10,7 @@ int main()
   string name;
   int score_1, score_2;
   int sum;
-  int average;
+  float average;
   int total_num = 0;
   
   ffs.open("students.txt");
