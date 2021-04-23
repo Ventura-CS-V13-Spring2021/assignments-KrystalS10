@@ -37,6 +37,9 @@ int main()
 
   fileWrite(difference);
 
+  while (difference > 3){
+    
+  }
 
 
 
