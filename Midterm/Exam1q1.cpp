@@ -24,5 +24,10 @@ int main()
     cout<< "Score 1: " << score_1 << "\t" << "Score 2: " << score_2 << "\t";   
 
     sum = score_1 + score_2; 
+    cout << "Sum: " << sum << "\t";
+    
+    average = sum / 2.0;
+    cout << "Avg: " << average << "\t"; 
+
   }
 }
