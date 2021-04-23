@@ -10,15 +10,17 @@ int findMax(int n1, int n2, int n3);
 int getDifference(int m1, int m2);
 void fileWrite(int d);
 
+
 int main()
 {
+
   int rdnum;
   srand(time(0));
 
   int num1 = getRdnum();
   int num2 = getRdnum();
   int num3 = getRdnum();
-
+  
   cout<<"Random number 1 is: " << num1 << endl;
   cout<<"Random number 2 is: " << num2 << endl;
   cout<<"Random number 3 is: " << num3 << endl;
@@ -37,17 +39,31 @@ int main()
 
   fileWrite(difference);
 
-  while (difference > 3){
-    
+  while (difference > 3)
+  {
+    difference = 0;
+    int num1 = getRdnum();
+    int num2 = getRdnum();
+    int num3 = getRdnum();
+    cout<< "Random number 1 is: " << num1 << endl;
+    cout<< "Random number 2 is: " << num2 << endl;
+    cout<< "Random number 3 is: " << num3 << endl;
+
+    int minNum = findMin(num1, num2, num3);
+    cout<< "The minimum number of the three is: " << minNum <<endl;
+
+    int maxNum = findMax(num1, num2, num3);
+    cout << "The maximum number of the three is: " << maxNum << endl;
+
+    difference = getDifference(minNum,maxNum);
+    cout << "The difference between the Max and Min number is: " << difference << endl;
+
+    fileWrite(difference);
   }
-
-
-
-
 }
 
 int getRdnum(){
-  int rdnum;
+  int rdnum = 0;
   rdnum = rand()% 9 + 1;
   return rdnum; 
 
