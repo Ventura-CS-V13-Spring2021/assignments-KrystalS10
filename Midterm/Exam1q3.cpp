@@ -7,8 +7,11 @@ using namespace std;
 int getRdnum(void);
 int findMin(int n1, int n2, int n3);
 int findMax(int n1, int n2, int n3);
+int getDifference(int m1, int m2);
+void fileWrite(int d);
 
-int main(){
+int main()
+{
   int rdnum;
   srand(time(0));
 
@@ -24,6 +27,9 @@ int main(){
   cout << "The minimum number of the three is: " << minNum << endl;
 
   int maxNum = findMax(num1, num2, num3);
+  cout << "The maximum number of the three is: " << maxNum << endl;
+
+
 }
 
 int getRdnum(){
