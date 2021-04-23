@@ -84,3 +84,12 @@ int getDifference(int m1, int m2){
   int difference = m2 - m1;
   return difference; 
 }
+
+void fileWrite (int d){
+  ofstream ofs;
+  ofs.open("question.txt");
+  if (ofs.is_open()){
+    ofs << d << "\t";
+  }
+  ofs.close();
+}
