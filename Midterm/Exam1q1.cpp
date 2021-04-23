@@ -34,9 +34,10 @@ int main()
     if (average > 80)
       total_num = total_num + 1;
 
+    cout << "\n"<< endl;
 
   }
 
-  cout << "The total number of students with an average higher than 80 is: " << total_num << endl;
+  cout << "\nThe total number of students with an average higher than 80 is: " << total_num << endl;
   ffs.close();
 }
