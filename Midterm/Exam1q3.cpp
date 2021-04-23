@@ -5,6 +5,7 @@
 using namespace std;
 
 int getRdnum(void);
+int findMin (int n1, int n2, int n3);
 int findMax(void);
 int maxnum = findMax();
 
@@ -21,6 +22,9 @@ int main(){
   cout<<"Random number 3 is: " << num3 << endl;
 
   int minNum = findMin(num1, num2, num3);
+  cout << "The minimum number of the three is: " << minNum << endl;
+
+  int maxNum = findMax();
 }
 
 int getRdnum(){
