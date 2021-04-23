@@ -30,13 +30,23 @@ int getRdnum(){
 
 }
 
-int findMin{
+int findMin(int n1, int n2, int n3){
+
   int minNum = 0;
   if (n1 < n2 && n1 < n3){
     minNum = n1;
   }
   else if ( n1 == n2 && n1 < 3){
     minNum = n1;
+  }
+  else if (n2 < n1 && n2 < n3)
+  {
+    minNum = n2;
+  }
+  else {
+    minNum = n3;
+  }
+  return minNum;
 }
 
 int findMax(){  
