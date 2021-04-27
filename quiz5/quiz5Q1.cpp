@@ -15,8 +15,13 @@ int main()
     }
 
     for(auto &eachvalue : diff ){
-      difference = sum - eachvalue ;
-      cout << difference << "\t";
+      int difference = 0
+      
+    for(auto &eachvalue : numbers){
+      int difference = 0;
+      difference = sum - eachvalue;
+      diff[eachvalue] = difference;
+      cout << diff[eachvalue] << "\t";
     }
 
 }
