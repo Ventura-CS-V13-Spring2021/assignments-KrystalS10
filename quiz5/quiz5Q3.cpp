@@ -32,5 +32,5 @@ void count0cluster(int bin[], int size)
       count += 1;
     }
   }
-  cout<< "The 0 cluster count is"<< count<< endl;
+  cout<< "The 0 cluster count is: "<< count<< endl;
 }
