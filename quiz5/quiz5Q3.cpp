@@ -28,17 +28,15 @@ void count0cluster(int bin[], int size)
 {
   int getMaxLength(bool bin[],int size);
   int count = 0;
-  int result = 0;
-  //int result = 0
+
   for(int i = 0; i < size; i++){
-   //   int count;
+
     if (bin[i] == 0 ){
       count = 0;
     }else{
       count++;
-      result = max(result,count);
     }
-    //return result;
+
   }
   cout<< "The 0 cluster count is: "<< result << endl;
 }
