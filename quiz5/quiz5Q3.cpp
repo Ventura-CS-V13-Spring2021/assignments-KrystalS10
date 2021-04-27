@@ -33,10 +33,11 @@ void count0cluster(int bin[], int size)
     if (bin[i] == 0 && k){
       count++;
       k = false;
-    }else{
-      count++;
+    }else if(bin[i]==1){
+      count = count + 0;
+      k = true;
     }
 
   }
-  cout<< "The 0 cluster count is: "<< result << endl;
+  cout<< "The 0 cluster count is: "<< count << endl;
 }
