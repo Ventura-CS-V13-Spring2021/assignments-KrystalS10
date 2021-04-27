@@ -28,7 +28,6 @@ void count0cluster(int bin[], int size)
 {
   int count = 0;
   for(int i = 0; i <size; i++){
-      int count;
     if (bin[i] == 0){
       count += 1;
     }
