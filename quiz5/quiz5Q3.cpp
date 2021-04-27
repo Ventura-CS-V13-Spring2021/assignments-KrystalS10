@@ -25,14 +25,14 @@ void printbinary(int num[], int size)
     cout << endl;
 }
 void count0cluster(int bin[], int size)
-{
-  int getMaxLength(bool bin[],int size);
+{ bool k = true;
   int count = 0;
 
   for(int i = 0; i < size; i++){
 
-    if (bin[i] == 0 ){
-      count = 0;
+    if (bin[i] == 0 && k){
+      count++;
+      k = false;
     }else{
       count++;
     }
