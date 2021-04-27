@@ -38,10 +38,8 @@ void findmatchnum(int num1[], int size1, int num2[], int size2)
        if (num1[k]==num2[i]){
          match++;
          k = size1;
-
-
-       }
-     }
-   }
+        }
+      }
+    }
     cout << "The number of matched elements "  << match << endl;
 }
