@@ -14,5 +14,8 @@ int main()
       sum += numbers[i];
     }
 
+    for(auto &eachvalue : diff ){
+      difference = sum - eachvalue ;
+    }
 
 }
