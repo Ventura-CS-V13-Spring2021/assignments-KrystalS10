@@ -11,17 +11,18 @@ int main()
     cout << numbers[10]<<endl;
 
     for (int i = 0; i< SIZE; i++){
+      cout << numbers[i]<<"\t";
       sum += numbers[i];
     }
 
-    for(auto &eachvalue : diff ){
-      int difference = 0
-      
+    cout<<"\t"<<endl;
+
     for(auto &eachvalue : numbers){
       int difference = 0;
       difference = sum - eachvalue;
       diff[eachvalue] = difference;
       cout << diff[eachvalue] << "\t";
     }
+
 
 }
