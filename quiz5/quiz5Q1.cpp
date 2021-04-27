@@ -16,6 +16,7 @@ int main()
 
     for(auto &eachvalue : diff ){
       difference = sum - eachvalue ;
+      cout << difference << "\t";
     }
 
 }
