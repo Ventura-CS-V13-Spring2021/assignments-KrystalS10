@@ -18,8 +18,8 @@ int main()
   cout << "After sorting with descending order: \n ";
 
   N.sortArray(1);
+
   N.printAll();
-
-
   cout << "The number of prime numbers " << N.getPrimenumbers() << endl;
+
 }
