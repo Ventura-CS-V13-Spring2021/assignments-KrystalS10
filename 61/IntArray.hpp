@@ -1,9 +1,9 @@
-#ifndef INTEGERARRAY_H
+#ifndef INTARRAY_H
 
-#define INTEGERARRAY_H
+#define INTARRAY_H
 
 
-class IntegerArray
+class IntArray
 
 {
 

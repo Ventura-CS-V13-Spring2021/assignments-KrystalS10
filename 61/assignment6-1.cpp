@@ -1,10 +1,10 @@
 #include <iostream>
-#include "IntegerArray.hpp"
+#include "IntArray.hpp"
 //#include <ctime>
 using namespace std;
 
 int assignment61(){
-  IntegerArray N;
+  IntArray N;
 
 
   N.fillUp();

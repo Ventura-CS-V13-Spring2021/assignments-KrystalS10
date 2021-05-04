@@ -12,7 +12,7 @@ class IntegerArray
     int getLength(void) const;
     void sortArray(int flag);
     void fillUp(void);
-    void getPrimenumber(void) const;
+    void getPrimenumbers(void) const;
     void printAll(void) const;
 
 };
