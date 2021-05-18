@@ -13,7 +13,7 @@ void swap( int i, int j){
 // }
 
 int main() {
-  int arr[] = { -12, 3, -12, 4, 1, 1, -12, 1 , -1, 1, 2, 3, 4, 2, 3 -12};
+  int arr[] = { -12, 3, -12, 4, 1, 1, -12, 1 , -1, 1, 2, 3, 4, 2, 3, -12};
   int len = sizeof(arr)/ sizeof(arr[0]);
   int sortedArr[len];
   int temp; 
@@ -32,17 +32,19 @@ int main() {
 
 
   cout<< "N" << "  " << "Count" << endl;
+
   int count;
-  for(int i = 0; i<= len; i++){
+  for(int i = 0; i< len; i++){
     count = 0;
-    for(int j = 0; j<= len; j++){
+    for(int j = 0; j< len; j++){
+      
       if(arr[i] == arr[j]){
         count++;
       }
     }
-    if(arr[i] != arr[i-1]){
-      cout<<arr[i-1] << "  "<< count<< endl;
-    }
+    if(arr[i] != arr[i+1])
+      cout<<arr[i] << "  "<< count<< endl;
+    
   }
 
   // for(int i: arr){
