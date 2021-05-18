@@ -1,6 +1,7 @@
 #ifndef STUDENT_H
 #define STUDENT_H
 #include <string>
+#include <iostream>
 using namespace std;
 
 class Student
@@ -12,16 +13,7 @@ private:
 
 public:
   Student () : name(), numClasses(0),classList(NULL){};
-  Student (string n, int num){
-    name = n;
-    num_classes = num;
-    class_list = new string[num];
-    for (int i = 0; i < num_classes; i++)
-    {
-      cout << "Enter the course name : ";
-       cin >> class_list[i];
-    }
-  }
+  Student (string n, int num);
   Student(Student &rhs);
   ~Student();
   Student &operator=(Student &rhs);
@@ -32,4 +24,13 @@ public:
   int getNumClasses() const;
 };
 
-#endif 
+Student::Student(string n, int num){
+  this->name = n;
+  this-> numClasses = num;
+  this-> classList = new string[num];
+   for (int i = 0; i < numClasses; i++)
+   {
+       cout << "Enter the course name : ";
+       cin >> classList[i];
+   }
+}
