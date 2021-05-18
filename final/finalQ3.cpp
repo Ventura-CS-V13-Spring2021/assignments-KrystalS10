@@ -34,3 +34,14 @@ Student::Student(string n, int num){
        cin >> classList[i];
    }
 }
+// Student Student::&operator= (Student &rhs){
+
+// }
+
+Student::~Student(){
+  delete[] classList;
+}
+void Student::resetClass(){
+  delete[] classList;
+  this->numClasses =0;
+}
