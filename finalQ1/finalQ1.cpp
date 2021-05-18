@@ -12,13 +12,19 @@ int getNumDiv(int num){
 }
 int main() {
   int arr[] = {1, 2, 4, 6, 10, 24};
-  int divElem[arr.lenth()];
-  for(int i = 0; i < arr.length(); i++){
+  int divElem[arr.length()];
+  for(int i = 0; i < arr.length; i++){
     divElem[i] = getNumDiv(arr[i]);
   }
+  int max = 0;
   for(int i = 0; i< divElem.length(); i++){
-    for(int j = i+1; j< divElem.length(); j++){
-      if(divElem[i]>divElem[j])
-    }
+   
+      if(divElem[i]> max){
+        max = divElem[i];
+
+      } 
   }
+
+  
 }
+
