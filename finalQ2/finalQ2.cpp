@@ -1,14 +1,18 @@
 #include <iostream>
 
-int swap( int i, int j){
-  
+void swap( int i, int j){
+  int temp;
+  temp = i;
+  i = j;
+  j = temp;
+
 }
 void getArrayCount(int arr[]){
   int len = sizeof(arr)/ sizeof(arr[0]);
   for(int i= 0; i < len; i++){
     for(int j = i+1; j< len; j++){
       if(arr[i] < arr[j]){
-        arr[i] = arr[j];
+        swap(arr[i], arr[j]);
       }
       
     }
